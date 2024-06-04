@@ -28,16 +28,16 @@ print(sol.longestPalindrome("a"))
 
 # Explanation:
 
--Character Counting: We use the Counter from the collections module to count the occurrences of each character in the string.
+1. Character Counting: We use the Counter from the collections module to count the occurrences of each character in the string.
 
--Calculate Length: We initialize length to 0 and odd_found to False. We iterate through the values in char_count:
+2. Calculate Length: We initialize length to 0 and odd_found to False. We iterate through the values in char_count:
 
   -For each character count, we add the largest even number less than or equal to the count to length using count // 2 * 2.
 
   -If a count is odd, we set odd_found to True.
 
--Adjust for Odd Character: After the loop, if odd_found is True, it means we can add one odd character in the center of the palindrome, so we increment length by 1.
+3. Adjust for Odd Character: After the loop, if odd_found is True, it means we can add one odd character in the center of the palindrome, so we increment length by 1.
 
--Return Result: Finally, we return the computed length.
+4. Return Result: Finally, we return the computed length.
 
--This code is efficient with a time complexity of O(n), where n is the length of the input string s, and it uses space proportional to the number of unique characters in s.
+This code is efficient with a time complexity of O(n), where n is the length of the input string s, and it uses space proportional to the number of unique characters in s.
