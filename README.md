@@ -1,6 +1,6 @@
 # This is my code in solving LeetCode Longest Palindrome.
 
-<sub>
+```
 from collections import Counter
 
 class Solution:
@@ -24,7 +24,7 @@ class Solution:
 sol = Solution()
 print(sol.longestPalindrome("abccccdd"))
 print(sol.longestPalindrome("a"))
-</sub>
+```
 
 # Explanation:
 
