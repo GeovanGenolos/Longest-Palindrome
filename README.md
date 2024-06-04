@@ -32,9 +32,9 @@ print(sol.longestPalindrome("a"))
 
 2. Calculate Length: We initialize length to 0 and odd_found to False. We iterate through the values in char_count:
 
-  -For each character count, we add the largest even number less than or equal to the count to length using count // 2 * 2.
+  - For each character count, we add the largest even number less than or equal to the count to length using count // 2 * 2.
 
-  -If a count is odd, we set odd_found to True.
+  - If a count is odd, we set odd_found to True.
 
 3. Adjust for Odd Character: After the loop, if odd_found is True, it means we can add one odd character in the center of the palindrome, so we increment length by 1.
 
